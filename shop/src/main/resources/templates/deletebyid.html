@@ -1,0 +1,17 @@
+<html xmlns:th="https://www.thymeleaf.org">
+
+<head>
+  <title>Delete</title>
+</head>
+
+<body>
+<h3>Delete Product By ID</h3>
+
+<form action="/deletebyid" th:object="${product}" method="post">
+  Product ID: <input type="number" th:field="*{id}"><br><br>
+  <input type="submit" value="Delete">
+</form>
+
+<a href="/"><button>Home</button></a>
+</body>
+</html>

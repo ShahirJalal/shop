@@ -1,0 +1,20 @@
+<html xmlns:th="https://www.thymeleaf.org">
+
+<head>
+  <title>Update</title>
+</head>
+
+<body>
+<h3>Update Product In Inventory</h3>
+
+<form action="/edit" th:object="${product}" method="post">
+  Product ID: <input type="number" th:field="*{id}"><br><br>
+  Product Name: <input type="text" th:field="*{name}" maxlength="50"><br><br>
+  Quantity: <input type="number" th:field="*{quantity}"><br><br>
+  Price: <input type="number" th:field="*{price}"><br><br>
+  <input type="submit" value="Update ">
+</form>
+
+<a href="/"><button>Home</button></a>
+</body>
+</html>

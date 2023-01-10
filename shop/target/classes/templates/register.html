@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Registration</title>
+</head>
+<body>
+<h1>Registration</h1>
+
+<form action="/registerEnter" method="post">
+  Username: <br><input type="text" name="userId"><br>
+  <br>
+  Email: <br><input type="email" name="email"><br>
+  <br>
+  Gender: <br>
+  <input type="radio" id="female" value="Female" name="gender"><label for="female">Female</label><br>
+  <input type="radio" id="male" value="Male" name="gender"><label for="male">Male</label><br>
+  <br>
+  <label for="position">Position:</label>
+  <select id="position" name="position">
+    <option value="chemist">Chemist</option>
+    <option value="hitman">Hitman</option>
+  </select><br>
+  <br>
+  Password: <br><input type="password" name="password" id="password"><br>
+  <br>
+  Confirm Password: <br><input type="password" name="password2" id="password2"><br><br>
+  <input type="submit" VALUE="Sign Up">
+</form>
+</body>
+</html>

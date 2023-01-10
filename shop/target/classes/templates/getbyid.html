@@ -1,0 +1,17 @@
+<html xmlns:th="https://www.thymeleaf.org">
+
+<head>
+  <title>Get</title>
+</head>
+
+<body>
+<h3>Display Product By ID</h3>
+
+<form action="/byid" th:object="${product}" method="post">
+  Product ID: <input type="number" th:field="*{id}"><br><br>
+  <input type="submit" value="Display">
+</form>
+
+<a href="/"><button>Home</button></a>
+</body>
+</html>
